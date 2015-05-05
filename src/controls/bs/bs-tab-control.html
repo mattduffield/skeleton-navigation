@@ -1,0 +1,11 @@
+<template>
+  <ul class="nav nav-tabs">
+    <li repeat.for="item of items" class="${item.isSelected ? 'active' : ''}">
+      <a href="#" class="${item.tabGlyph ? 'glyphicon glyphicon-' + item.tabGlyph : ''}" click.trigger="$parent.selectItem(item)">${item.title}</a>
+    </li>
+  </ul>
+	
+	<div class="tab-content">
+		<content select="bs-tab-item"></content>
+	</div>
+</template>

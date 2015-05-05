@@ -1,4 +1,7 @@
 <template>
+  <require from='./controls/bs/bs-tab-control'></require>
+  <require from='./controls/bs/bs-tab-item'></require>
+
   <section class="au-animate">
     <h2>${heading}</h2>
 
@@ -18,4 +21,16 @@
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </section>
+  <bs-tab-control>
+    <bs-tab-item title=" Designer" tab-glyph="cog">
+      <h1>Designer page...</h1>
+    </bs-tab-item>
+    <bs-tab-item title=" Preview JSON" tab-glyph="cog">
+      <h1>Preview JSON page...</h1>
+    </bs-tab-item>
+    <bs-tab-item title=" Preview HTML" tab-glyph="cog">
+      <h1>Preview HTML page...</h1>
+    </bs-tab-item>
+  </bs-tab-control>
+  
 </template>
